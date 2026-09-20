@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Assistant Bot</title>
+  <style>
+    body { font-family: Arial; background: #1e1e1e; color: white; display: flex; justify-content: center; }
+    #chat-container { width: 400px; margin-top: 30px; }
+    #chat-box { height: 400px; overflow-y: auto; border: 1px solid #444; padding: 10px; border-radius: 8px; background: #2a2a2a; }
+    .user-msg { text-align: right; color: #4fc3f7; margin: 8px 0; }
+    .bot-msg { text-align: left; color: #a5d6a7; margin: 8px 0; }
+    #input-area { display: flex; margin-top: 10px; }
+    #message-input { flex: 1; padding: 10px; border-radius: 5px; border: none; }
+    #send-btn { padding: 10px 20px; margin-left: 5px; border: none; background: #4fc3f7; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div id="chat-container">
+    <h2>🤖 My Assistant</h2>
+    <div id="chat-box"></div>
+    <div id="input-area">
+      <input type="text" id="message-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById('chat-box');
+    const input = document.getElementById('message-input');
+    const sendBtn = document.getElementById('send-btn');
+
+    async function sendMessage() {
+      const message = input.value.trim();
+      if (!message) return;
+
+      chatBox.innerHTML += `<div class="user-msg">You: ${message}</div>`;
+      input.value = '';
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      const response = await fetch('http://localhost:3000/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message })
+      });
+
+      const data = await response.json();
+      chatBox.innerHTML += `<div class="bot-msg">Bot: ${data.reply}</div>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
+  </script>
+</body>
+</html>
