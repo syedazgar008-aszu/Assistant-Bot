@@ -64,8 +64,13 @@ client.on('message', async (message) => {
     if (message.fromMe) return; // apple sent messages ignore (namma anuppura messages ku bot reply pannama irukka)
 
 
-    const userId = message.from;
+        const userId = message.from;
+    
+    // Empty messages (reactions, status, calls) skip pannunga
+    if (!message.body || message.body.trim() === '') return;
+    
     console.log(`Message vandhuchu (${userId}): ${message.body}`);
+    
 
     // User message-a history-la add pannunga
     addToHistory(userId, 'user', message.body);
