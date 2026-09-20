@@ -22,7 +22,10 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 
 const client = new Client({
-  authStrategy: new LocalAuth()
+  authStrategy: new LocalAuth(),
+  puppeteer: {
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+  }
 });
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
@@ -57,7 +60,7 @@ client.on('message', async (message) => {
        if (message.from.includes('@g.us')) return; // groups ignore
     if (message.from === 'status@broadcast') return; // status updates ignore
     if (message.fromMe) return; // apple sent messages ignore (namma anuppura messages ku bot reply pannama irukka)
-    
+
 
     const userId = message.from;
     console.log(`Message vandhuchu (${userId}): ${message.body}`);
