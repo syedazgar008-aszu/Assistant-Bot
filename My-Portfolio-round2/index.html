@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="Syed Azgar — B.Com CA student, web developer and creative builder.">
+  <meta name="theme-color" content="#0a0e27">
+  <meta name="color-scheme" content="dark light">
+  <meta name="robots" content="index,follow">
+  <title>My-Portfolio</title>
+  <link rel="icon" href="img/favicon.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="img/profile.webp" fetchpriority="high">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <div class="bg" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <div class="grid"></div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="logo" href="#home" aria-label="Syed Azgar home">ASZU<span>.</span></a>
+
+    <nav class="nav" id="nav" aria-label="Primary navigation">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light mode">☀</button>
+      <button class="menu-btn" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <i></i><i></i><i></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for opportunities</span>
+        </div>
+        
+        <h1 class="hero-title">
+          <span class="word-wrap">Syed</span>
+          <span class="word-wrap gradient-text">Azgar</span>
+        </h1>
+        
+        <h2 class="hero-subtitle">
+          <span id="typing">Web Developer</span><b class="cursor">|</b>
+        </h2>
+        
+        <p class="lead">Building beautiful, fast, and accessible digital experiences. B.Com Computer Applications student passionate about web development and creative innovation.</p>
+
+        <div class="buttons">
+          <a class="btn primary magnetic" href="#projects">
+            <span>Explore My Work</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M13 3L3 13M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="btn ghost magnetic" href="#contact">
+            <span>Let's Connect</span>
+          </a>
+        </div>
+
+        <div class="socials" aria-label="Social links">
+          <a href="https://github.com/syedazgar008-aszu" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.snapchat.com/add/aszu_22" target="_blank" rel="noopener noreferrer">Snapchat</a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=syedazgar008@gmail.com" target="_blank" rel="noopener noreferrer"> Email Me </a>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">
+          <span class="scroll-line"></span>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+
+        <div class="profile-card tilt" id="profileCard">
+          <div class="card-bg"></div>
+          <div class="shine"></div>
+          
+          <div class="card-topline">
+            <span>PORTFOLIO / 01</span>
+            <span>ASZU</span>
+          </div>
+
+          <div class="avatar">
+            <img src="img/profile.webp" alt="Portrait of Syed Azgar" width="160" height="160" fetchpriority="high">
+          </div>
+
+          <h3>Syed Azgar</h3>
+          <p>B.Com CA · Developer</p>
+
+          <div class="available">
+            <span class="pulse"></span>
+            Open to opportunities
+          </div>
+
+          <div class="mini-stats">
+            <div>
+              <strong>02+</strong>
+              <small>Experience</small>
+            </div>
+            <div>
+              <strong>06</strong>
+              <small>Skills</small>
+            </div>
+            <div>
+              <strong>∞</strong>
+              <small>Ideas</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-tag tag-one">Code & Build</div>
+        <div class="float-tag tag-two">✦ Create</div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="about">
+      <div class="heading reveal">
+        <p class="section-number">01 — ABOUT</p>
+        <h2>A little bit <span>about me.</span></h2>
+        <small>Student mindset. Builder energy. Always learning.</small>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>I'm currently pursuing <strong>B.Com Computer Applications</strong> at Thiruthangal Nadar College.</p>
+          <p>Alongside my studies, I'm learning web development and building practical projects to improve my technical and creative skills. I focus on creating fast, accessible, and beautiful digital experiences.</p>
+          <a class="text-link" href="#contact">
+            Let's connect
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 13L13 3M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="stats">
+          <article class="stat reveal">
+            <strong>2024–27</strong>
+            <span>Education</span>
+          </article>
+          <article class="stat reveal">
+            <strong>02+</strong>
+            <span>Experience</span>
+          </article>
+          <article class="stat reveal">
+            <strong>∞</strong>
+            <span>Ideas</span>
+          </article>
+          <article class="stat reveal">
+            <strong>24/7</strong>
+            <span>Learning</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="skills">
+      <div class="heading reveal">
+        <p class="section-number">02 — SKILLS</p>
+        <h2>Tools I use to <span>build.</span></h2>
+        <small>Clean UI, responsive layouts, useful interactions and practical development.</small>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill reveal" data-level="90">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9 2L3 6V18L9 22H15L21 18V6L15 2H9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>HTML5</h3>
+              <p>Semantic structure</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="bar-fill" style="--level: 90%"></div>
+            <span class="bar-label">90%</span>
+          </div>
+        </article>
+
+        <article class="skill reveal" data-level="85">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M9 9H15M9 15H15M9 12H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>CSS3</h3>
+              <p>Responsive design</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="bar-fill" style="--level: 85%"></div>
+            <span class="bar-label">85%</span>
+          </div>
+        </article>
+
+        <article class="skill reveal" data-level="75">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M8 9L11 12L8 15M16 9L13 12L16 15M4 2H20C21.1 2 22 2.9 22 4V20C22 21.1 21.1 22 20 22H4C2.9 22 2 21.1 2 20V4C2 2.9 2.9 2 4 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>JavaScript</h3>
+              <p>Interactivity</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="bar-fill" style="--level: 75%"></div>
+            <span class="bar-label">75%</span>
+          </div>
+        </article>
+
+        <article class="skill reveal" data-level="85">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 7V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <h3>UI/UX Design</h3>
+              <p>User experience and interface design</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="bar-fill" style="--level: 85%"></div>
+            <span class="bar-label">85%</span>
+          </div>
+        </article>
+
+        <article class="skill reveal" data-level="65">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M6 12C6 9.239 8.239 7 11 7H13C15.761 7 18 9.239 18 12C18 14.761 15.761 17 13 17H11C8.239 17 6 14.761 6 12Z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="11" cy="12" r="1.5" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <h3>MongoDB</h3>
+              <p>NoSQL</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="bar-fill" style="--level: 65%"></div>
+            <span class="bar-label">65%</span>
+          </div>
+        </article>
+
+        <article class="skill reveal" data-level="92">
+          <div class="skill-content">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M8 14S9.5 16 12 16C14.5 16 16 14 16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="9" cy="10" r="1" fill="currentColor"/>
+                <circle cx="15" cy="10" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <h3>GitHub</h3>
+              <p>Version control</p>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="bar-fill" style="--level: 92%"></div>
+            <span class="bar-label">92%</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="experience">
+      <div class="heading reveal">
+        <p class="section-number">03 — EXPERIENCE</p>
+        <h2>My work <span>experience.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="line-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <small>EXPERIENCE 01</small>
+            <h3>Sales Executive</h3>
+            <h4>Airtel</h4>
+            <p>Worked in metro stations promoting and selling Airtel Metro Travel Cards and Airtel Debit Cards, developing customer communication and sales skills.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item reveal">
+          <div class="timeline-marker">
+            <span class="line-dot"></span>
+          </div>
+          <div class="timeline-content">
+            <small>EXPERIENCE 02</small>
+            <h3>Gaming Data / Game Tracking</h3>
+            <h4>Opta Vision</h4>
+            <p>Worked with sports game-tracking tasks including player identification, scoring and game-data editing.</p>
+          </div>
+        </article>
+      </div>
+ <center> 
+      <a class="btn primary resume magnetic" href="assets/resume/Syed-Azgar-Resume.pdf" download>
+      <span>Download Resume</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 2V11M3 8L8 13L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </section>
+  </center>
+    <section class="section wrap" id="projects">
+      <div class="heading reveal">
+        <p class="section-number">04 — PROJECTS</p>
+        <h2>Things I've <span>built.</span></h2>
+      </div>
+
+      <div class="projects">
+        <article class="project reveal">
+          <div class="project-header">
+            <div>
+              <span class="project-type">PORTFOLIO</span>
+              <h3>Personal Profile Website</h3>
+            </div>
+            <div class="project-arrow">↗</div>
+          </div>
+          <p>A fast, responsive portfolio with polished UI/UX, accessibility standards and smooth animations.</p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>UI/UX</span>
+          </div>
+          <a href="#home" class="project-link" aria-label="View portfolio project"></a>
+        </article>
+
+        <article class="project reveal">
+          <div class="project-header">
+            <div>
+              <span class="project-type">NEXT BUILD</span>
+              <h3>Coming Soon</h3>
+            </div>
+            <div class="project-arrow">↗</div>
+          </div>
+          <p>A new real-world project will be added here as I continue building and learning.</p>
+          <div class="project-tags">
+            <span>Future</span>
+            <span>Project</span>
+          </div>
+          <a href="#contact" class="project-link" aria-label="Contact me"></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section wrap" id="ideas">
+      <div class="idea-box reveal">
+        <div class="idea-content">
+          <span class="badge">● BUILDING</span>
+          <h2>Future Project Lab</h2>
+          <p>Experiments, ideas and future projects — turning concepts into useful digital products.</p>
+        </div>
+        <div class="idea-icon">✦</div>
+      </div>
+    </section>
+
+    <section class="section wrap contact" id="contact">
+      <div class="heading reveal">
+        <p class="section-number">05 — CONTACT</p>
+        <h2>Let's build something <span>great.</span></h2>
+      </div>
+
+      <div class="contact-box reveal">
+        <div class="contact-info">
+          <span class="contact-label">GET IN TOUCH</span>
+          <p>Have an idea, opportunity or project? Let's talk.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary magnetic" href="https://mail.google.com/mail/?view=cm&fs=1&to=syedazgar008@gmail.com"target="_blank" rel="noopener noreferrer">
+            <span>Email me</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M13 3L3 13M13 3H6M13 3V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="btn ghost magnetic" href="https://www.instagram.com/aszu_22" target="_blank" rel="noopener noreferrer">
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Built with HTML · CSS · JavaScript</span>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
