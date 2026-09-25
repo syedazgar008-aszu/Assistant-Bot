@@ -35,7 +35,7 @@ client.on('qr', (qr) => {
   console.log('=================================');
   console.log('QR Code kelambuchu, WhatsApp-la scan pannunga:');
   console.log('=================================');
-  qrcode.generate(qr, { small: true });
+  qrcode.generate(qr, { small: false });
 });
 
 client.on('ready', () => {
